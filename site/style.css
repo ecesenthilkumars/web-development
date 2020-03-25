@@ -1,0 +1,24 @@
+h1 {
+	color : blue;
+	font-family: cursive;
+	font-size: 24px;
+	text-align: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#header {
+	width: 100%;
+	overflow: auto;
+	table-layout: fixed;
+}
+.menu {
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+	background-color: #f497fc;
+	color: #202940;
+	float: none;
+}
