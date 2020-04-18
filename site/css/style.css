@@ -1,25 +1,74 @@
 #page_heading {
-	color : blue;
-	font-family: cursive;
-	font-size: 24px;
-	text-align: center;
-	float: center;
+    color : #dc3545;
+    font-family: Oxygen, cursive;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-#header_table {
-	width: 100%;
-	overflow: auto;
-	table-layout: fixed;
+.main_menu_item{
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    background-color: #ffdf7e;
+    float: none;
 }
-.main_menu_item {
-	border: 1px solid black;
-	padding: 5px;
-	text-align: center;
-	background-color: #f497fc;
-	color: #202940;
-	float: none;
+
+.main_menu_item a{
+    color: brown;
+}
+
+.main_menu_item a:hover{
+    color: brown;
+    text-decoration: none;
+}
+
+#header_logo {
+    border-radius: 15%;
+    height: 70px;
+    background-image: url(../image/logo.jpg);
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.content {
+    background-color: #fbfcfc;
+}
+
+#form_holder {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.HW_fieldset {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 1em;
+  border: 1px solid gray;
+}
+
+.HW_legend{
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: right;
+  width: auto;
+  font-size: 20px;
+  color: black;
+}
+
+.HW_label, .HW_input_field{
+  font-size: 16px;
+  text-align: left;
+}
+
+.HW_row {
+    margin-top: 20px;
 }

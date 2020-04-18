@@ -1,15 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hardware</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="js/script.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hardware</title>
+    <link rel="stylesheet" type='text/css' href="css/bootstrap.min.css">
+    <link rel="stylesheet" type='text/css' href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css"/>
 </head>
 <body onload="webpage_load()">
-	<h1 id="page_heading"></h1>
-	<!-- Page Main Menu Starts -->
-	<table id="header_table"></table>
-	<!-- Page Main Menu Ends -->
-<div>Hardwares!</div>
+    <div class = "container-fluid">
+        <div class="row">
+            <div id="header_logo" class="col-md-1"></div>
+            <div id="page_heading" class="col-md-10"></div>
+        </div>
+    </div>
+    <!-- Page Main Menu Starts -->
+    <header class="container-fluid">
+        <nav id="menu_container" class="row">
+        </nav>
+    </header>
+    <!-- Page Main Menu Ends -->
+    
+    <header class="content container-fluid">
+        <nav class="row">
+            <div class="col-md-1"></div>
+            <div id="form_holder" class="col-md-10">
+                <form id="HW_form">
+                    <fieldset class="HW_fieldset">
+                        <legend class="HW_legend">Hardware Request Form</legend>
+                        <div class="container-fluid">
+                            <div class="row HW_row">
+                                <label class="col-md-6 HW_label">Required hardware:</label>
+                                <select id="HW_Device_Id" class="col-md-6 HW_input_field">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                            <div class="row HW_row">
+                                <label class="col-md-6 HW_label">Requested by:</label>
+                                <select id="HW_requester" class="col-md-6 HW_input_field">
+                                    <option>Emp_1</option>
+                                    <option>Emp_2</option>
+                                    <option>Emp_3</option>
+                                    <option>Emp_4</option>
+                                </select>
+                            </div>
+                            <div class="row HW_row">
+                                <label class="col-md-6 HW_label">Hardware required from (select both date and time):</label>
+                                <input id="HW_start_date" type="date" class="HW_input_field col-md-3">
+                                <input id="HW_start_time" type="time" class="HW_input_field col-md-3">
+                            </div>
+                            <div class="row HW_row">
+                                <label class="col-md-6 HW_label">Hardware required until:</label>
+                                <input id="HW_end_date" type="date" class="HW_input_field col-md-3">
+                                <input id="HW_end_time" type="time" class="HW_input_field col-md-3">
+                            </div>
+                            <div class="row HW_row">
+                                <label class="col-md-6 HW_label">Remarks (mention CR and short description here):</label>
+                                <textarea id="HW_remark" rows="3" class="HW_input_field col-md-6"></textarea>
+                            </div>
+                            <div class="row HW_row">
+                                <div class="col-md-3"></div>
+                                <input class="col-md-1" type="button" name="Reset" value="Reset">
+                                <div class="col-md-4"></div>
+                                <input class="col-md-1" type="button" name="Submit" value="Submit">
+                                <div class="col-md-3"></div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-md-1"></div>
+        </nav>
+    </header>
+    <header class="container-fluid">
+        <nav class="row">
+            
+        </nav>
+    </header>
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
